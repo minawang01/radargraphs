@@ -1,0 +1,23 @@
+{
+  "name": "d3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "monkeylearn": "^3.4.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mina W",
+  "license": "ISC"
+}

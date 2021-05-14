@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Practice</title>
+        <script src="https://d3js.org/d3.v6.js"></script>
+        <script src="https://d3js.org/d3-path.v2.min.js"></script>
+        <script src="https://d3js.org/d3-shape.v2.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="root">
+            <div id="title">
+                <label for="options">Analyze by </label>
+                    <select name="options" id="options">
+                      <option value="song">Song</option>
+                      <option value="album">Album</option>
+                    </select>
+            </div>
+            <form id="song" class="active">
+                <input type="text" id="song_name" name="song_name" onfocus="this.value=''" placeholder="Song Name">
+                <label for="artist">by</label>
+                <input type="text" id="artist" name="artist" onfocus="this.value=''" placeholder="Artist">
+                <br>
+                <label for="id">Song ID:</label>
+                <input type="text" id="songid" name="songid" onfocus="this.value=''" placeholder="ID">
+                <input class="sub-btn" type="submit">
+            </form>
+            <form id="album">
+                <label for="id">Album ID:</label>
+                <input type="text" id="albumid" name="albumid" onfocus="this.value=''">
+                <input class="sub-btn" type="submit">
+            </form>
+            <div id="svgcontainer"></div>
+        </div>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
